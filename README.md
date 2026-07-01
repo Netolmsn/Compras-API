@@ -10,7 +10,9 @@ Mugiwara Kazoku
 
 Esta API REST permite cadastrar itens em um catálogo e registrar compras aleatórias.
 
-Ao criar uma nova compra, o cliente informa o `item_id`. A aplicação valida se o item existe e possui estoque disponível, consulta a API pública do GitHub, seleciona um usuário aleatório, registra a compra no banco de dados e reduz o estoque do item comprado.
+Ao criar uma nova compra, o cliente informa o `item_id`. A aplicação valida se o item existe, verifica se possui estoque disponível, consulta a API pública do GitHub, seleciona um usuário aleatório, registra a compra no banco de dados e reduz o estoque do item comprado.
+
+A API também possui documentação interativa com Swagger/OpenAPI.
 
 ## Tecnologias utilizadas
 
@@ -33,4 +35,4 @@ Clone o projeto:
 
 ```bash
 git clone https://github.com/Netolmsn/Compras-API.git
-cd compras-api
+cd Compras-API

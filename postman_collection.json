@@ -1,0 +1,97 @@
+{
+  "info": {
+    "name": "API Lista de Compras Aleatórias com Catálogo",
+    "description": "Coleção Postman para testar a API REST de catálogo de itens e compras aleatórias.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3333/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3333",
+          "path": [""]
+        }
+      }
+    },
+    {
+      "name": "Criar Item",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Notebook\",\n  \"preco\": 3500.9,\n  \"qtd_atual\": 5\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3333/itens",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3333",
+          "path": ["itens"]
+        }
+      }
+    },
+    {
+      "name": "Listar Itens",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3333/itens",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3333",
+          "path": ["itens"]
+        }
+      }
+    },
+    {
+      "name": "Criar Compra",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"item_id\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3333/compras",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3333",
+          "path": ["compras"]
+        }
+      }
+    },
+    {
+      "name": "Listar Compras",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3333/compras",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3333",
+          "path": ["compras"]
+        }
+      }
+    }
+  ]
+}
