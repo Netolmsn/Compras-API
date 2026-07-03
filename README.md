@@ -131,9 +131,3 @@ Este projeto foi desenvolvido exclusivamente para fins de avaliação técnica.
 
 ````
 
-Depois de colar, rode:
-
-```bash
-git add README.md
-git commit -m "docs: add complete project readme"
-````
